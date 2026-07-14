@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# Alwayzz
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A minimal, clean, black-and-white single-page landing hero for the creative agency **Alwayzz**.
 
-Currently, two official plugins are available:
+Built with:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React + Vite + TypeScript
+- Tailwind CSS (setup only — all visual styling uses custom CSS)
+- Custom CSS for every detail (no Tailwind utility classes)
+- lucide-react icons
 
-## React Compiler
+## Design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fixed navbar with logo and animated full-screen drawer menu
+- Hero with custom background image, animated curved decorative lines (desktop + mobile), scrolling ticker, large serif title, subtitle and dual CTAs
+- Trusted By marquee with stylized company names
+- Tight negative letter-spacing, Inter + Source Serif 4 fonts via Google Fonts
+- Fully responsive (desktop / tablet / mobile <810px)
 
-## Expanding the Oxlint configuration
+## Getting started
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Build for production:
+
+```bash
+npm run build
+```
+
+## Fonts
+
+- Inter (400, 500, 600, 700)
+- Source Serif 4 (400, 600 + italics)
+
+## Repository
+
+https://github.com/amenedo/alwayzz
+
+## License
+
+Private project.
