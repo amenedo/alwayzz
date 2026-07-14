@@ -1,4 +1,5 @@
-@import "tailwindcss";
+/* Tailwind CSS is installed and configured in package.json (per spec).
+   No Tailwind utility classes are used — all styling is 100% custom CSS below. */
 
 /* =========================================
    Alwayzz - Custom CSS (no Tailwind utilities used for styling)
